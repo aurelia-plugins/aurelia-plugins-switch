@@ -1,0 +1,26 @@
+{
+  "name": "aurelia-plugins-switch",
+  "version": "1.0.0",
+  "description": "A switch plugin for Aurelia.",
+  "keywords": [
+    "aurelia",
+    "plugins",
+    "plugin",
+    "switch"
+  ],
+  "homepage": "https://github.com/aurelia-plugins/aurelia-plugins-switch",
+  "main": "dist/commonjs/aurelia-plugins-switch.js",
+  "moduleType": "node",
+  "license": "MIT",
+  "authors": [
+    "Bart Lenaerts <bart@itprosolutions.be> (http://itprosolutions.be/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/aurelia-plugins/aurelia-plugins-switch"
+  },
+  "dependencies": {
+    "aurelia-dependency-injection": "^1.2.0",
+    "aurelia-templating": "^1.1.2"
+  }
+}
