@@ -90,7 +90,7 @@ export class App {
 
 ## Styling
 
-The switch doesn't come with styling. If you use the CSS Framework [`Faceman`](<https://faceman.io>), styling is provided automatically. Otherwise copy and paste the below styling to your SCSS stylesheet. Use the variables to change the look-and-feel.
+The switch doesn't come with styling. If you use the CSS Framework [`Faceman`](<http://faceman.io>), styling is provided automatically. Otherwise copy and paste the below styling to your SCSS stylesheet. Use the variables to change the look-and-feel.
 
 ```SCSS
 // VARIABLES
