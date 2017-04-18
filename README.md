@@ -64,6 +64,8 @@ There are 2 usable attributes, `checked` and `id`. Use the `checked` value to se
 
 ```JS
 export class App {
+  constructor() {}  
+
   checked = false;
   id = 'mySwitch';
 }
@@ -79,6 +81,8 @@ Add a delegate function to control what happens when the state is changed from o
 
 ```JS
 export class App {
+  constructor() {}  
+
   checked = false;
   id = 'mySwitch';
   
