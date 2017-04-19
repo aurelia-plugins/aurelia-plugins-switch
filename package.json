@@ -1,6 +1,6 @@
 {
   "name": "aurelia-plugins-switch",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A switch plugin for Aurelia.",
   "keywords": [
     "aurelia",
@@ -43,6 +43,13 @@
     "dependencies": {
       "aurelia-dependency-injection": "^1.3.1",
       "aurelia-templating": "^1.4.2"
+    }
+  },
+  "aurelia": {
+    "build": {
+      "resources": [
+        "aurelia-plugins-switch/aurelia-plugins-switch-element"
+      ]
     }
   }
 }
