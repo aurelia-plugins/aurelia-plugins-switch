@@ -46,11 +46,11 @@ Once the switch plugin is configured, to use it simply add the custom element `<
  
 There are 2 usable attributes, `checked` and `id`. Use the `checked` value to set the state of the switch (OFF=false / ON=true). The `id` attribute can useful when using multiple switches. If you don't add the `id` attribute, the switch will automatically generate a random id behind the scene.
 
-```HTML
+```html
 <aup-switch checked.bind="checked" id.bind="id"></aup-switch>
 ```
 
-```JS
+```javascript
 export class App {
   constructor() {}  
 
@@ -63,11 +63,11 @@ export class App {
 
 Add a delegate function to control what happens when the state is changed from one to another. You can retrieve the `checked` state and the `id` from the `event` property.
 
-```HTML
+```html
 <aup-switch change.delegate="onChange($event)" checked.bind="checked" id.bind="id"></aup-switch>
 ```
 
-```JS
+```javascript
 export class App {
   constructor() {}  
 
@@ -84,7 +84,7 @@ export class App {
 
 The switch doesn't come with styling. If you use the CSS Framework [`Faceman`](<http://faceman.io>), styling is provided automatically. Otherwise copy and paste the below styling to your SCSS stylesheet. Use the variables to change the look-and-feel.
 
-```SCSS
+```scss
 // VARIABLES
 $switch-active-background: #ffffff !default;
 $switch-active-color: #2ecc71 !default;
