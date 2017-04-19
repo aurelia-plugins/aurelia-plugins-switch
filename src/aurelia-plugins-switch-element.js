@@ -11,9 +11,9 @@ import {Utilities} from './aurelia-plugins-switch-utilities';
 
 
 // PUBLIC CLASS
-export default class Switch {
+export class Switch {
   // PRIVATE PROPERTIES (DI)
-  element;
+  _element;
 
   // BINDABLE PROPERTIES
   @bindable checked;
@@ -21,7 +21,7 @@ export default class Switch {
 
   // CONSTRUCTOR
   constructor(element) {
-    this.element = element;
+    this._element = element;
   }
 
   // PUBLIC METHODS
@@ -33,6 +33,6 @@ export default class Switch {
       toggleEvent = document.createEvent('CustomEvent');
       toggleEvent.initCustomEvent('change', true, true, { data: { checked: this.checked, id: this.id } });
     }
-    this.element.dispatchEvent(toggleEvent);
+    this._element.dispatchEvent(toggleEvent);
   }
 }

@@ -24,18 +24,6 @@ bower install aurelia-plugins-switch
 
 ## Configuration
 
-Add to `package.json`
-
-```json
-  "aurelia": {
-    "build": {
-      "resources": [
-        "aurelia-plugins-switch"
-      ]
-    }
-  }
-```
-
 Inside of your `main.js` or `main.ts` file simply load the plugin inside of the configure method using `.plugin()`.
 
 ```javascript
