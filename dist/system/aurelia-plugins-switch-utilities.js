@@ -1,19 +1,21 @@
-System.register([], function (_export, _context) {
-  "use strict";
+'use strict';
 
-  return {
-    setters: [],
-    execute: function () {
-      let Utilities = class Utilities {
-        static random(length, values) {
-          const result = new Array(length);
-          const characters = values || 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
-          for (let i = 0, j = length; i < j; i += 1) result[i] = characters[Math.floor(Math.random() * characters.length)];
-          return result.join('');
-        }
-      };
+exports.__esModule = true;
 
-      _export('Utilities', Utilities);
-    }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Utilities = exports.Utilities = function () {
+  function Utilities() {
+    _classCallCheck(this, Utilities);
+  }
+
+  Utilities.random = function random(length, values) {
+    var result = new Array(length);
+    var characters = values || 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
+    for (var i = 0, j = length; i < j; i += 1) {
+      result[i] = characters[Math.floor(Math.random() * characters.length)];
+    }return result.join('');
   };
-});
+
+  return Utilities;
+}();
