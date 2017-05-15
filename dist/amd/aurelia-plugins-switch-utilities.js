@@ -1,21 +1,29 @@
-'use strict';
+define(['exports'], function (exports) {
+  'use strict';
 
-exports.__esModule = true;
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Utilities = exports.Utilities = function () {
-  function Utilities() {
-    _classCallCheck(this, Utilities);
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
   }
 
-  Utilities.random = function random(length, values) {
-    var result = new Array(length);
-    var characters = values || 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
-    for (var i = 0, j = length; i < j; i += 1) {
-      result[i] = characters[Math.floor(Math.random() * characters.length)];
-    }return result.join('');
-  };
+  var Utilities = exports.Utilities = function () {
+    function Utilities() {
+      _classCallCheck(this, Utilities);
+    }
 
-  return Utilities;
-}();
+    Utilities.random = function random(length, values) {
+      var result = new Array(length);
+      var characters = values || 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
+      for (var i = 0, j = length; i < j; i += 1) {
+        result[i] = characters[Math.floor(Math.random() * characters.length)];
+      }return result.join('');
+    };
+
+    return Utilities;
+  }();
+});
