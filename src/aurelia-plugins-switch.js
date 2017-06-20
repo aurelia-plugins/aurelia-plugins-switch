@@ -1,4 +1,8 @@
+// IMPORTS
+import {PLATFORM} from 'aurelia-pal';
+
+
 // PUBLIC METHODS
 export function configure(aurelia) {
-  aurelia.globalResources('./aurelia-plugins-switch-element');
+  aurelia.globalResources(PLATFORM.moduleName('./aurelia-plugins-switch-element'));
 }

@@ -1,4 +1,6 @@
 
+import { PLATFORM } from 'aurelia-pal';
+
 export function configure(aurelia) {
-  aurelia.globalResources('./aurelia-plugins-switch-element');
+  aurelia.globalResources(PLATFORM.moduleName('./aurelia-plugins-switch-element'));
 }
