@@ -4,20 +4,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _class, _temp;
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Utilities = exports.Utilities = function () {
+var Utilities = exports.Utilities = (_temp = _class = function () {
   function Utilities() {
     _classCallCheck(this, Utilities);
   }
 
-  Utilities.random = function random(length, values) {
+  Utilities.random = function random(length) {
+    var characters = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.allCharacters;
+
     var result = new Array(length);
-    var characters = values || 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
-    for (var i = 0, j = length; i < j; i += 1) {
+    for (var i = 0; i < length; i++) {
       result[i] = characters[Math.floor(Math.random() * characters.length)];
     }return result.join('');
   };
 
   return Utilities;
-}();
+}(), _class.allCharacters = 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789', _temp);

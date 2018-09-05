@@ -1,3 +1,4 @@
 export declare class Utilities {
-    static random(length: any, values: any): string;
+    static allCharacters: string;
+    static random(length: any, characters?: string): string;
 }
